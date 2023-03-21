@@ -1,5 +1,5 @@
 // CREATE VARIABLES FOR ALL TARGETED CLASSES
-var day = $('.lead');
+var day = $('#currentDay');
 var timeBlock = $('.container-lg');
 
 
