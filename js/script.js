@@ -1,6 +1,10 @@
 // CREATE VARIABLES FOR ALL TARGETED CLASSES
 var day = $('#currentDay');
-var timeBlock = $('.container-lg');
+var container = $('.container-lg');
+var saveBtn = $('saveBtn');
+// var past = $('.time-block past');
+// var present = $('.time-block present');
+// var future = $('.time-block future');
 
 
 
@@ -15,7 +19,19 @@ var timeBlock = $('.container-lg');
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(function () {
+$(function timeBlock () {
+  var timeBlocks = $('.time-block');
+
+  // timeBlocks.each(function(){
+  //   var timeBlock = $(this);
+    
+// check the timeblock hour and if it is before current hour 
+// then add the 'past' class to the timeBlock div
+
+
+  });
+
+ 
 
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
@@ -35,5 +51,12 @@ $(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
+  $(function currentDate () {
+    // var date = new date();
+    // var currDate = date.getFullYear()+ '-' +(date.getMonth()+1)+ '-' + date.getDate();
+    // document.getElementById('currentDay').textContent = date;
   });
+
+
+  saveBtn.addEventListener('click', );
   
