@@ -20,9 +20,9 @@ MIT License
 
 This web application was designed with assistance from JD Tadlack, W3 Schools and MDN Web Docs: https://developer.mozilla.org/en-US/ // https://www.w3schools.com/
 
-Link to deployed webpage: https://njd8927.github.io/web_dev_quiz/
+Link to deployed webpage: https://njd8927.github.io/calendar_challenge/
 ## Mock-Up
 
 TThe following image demonstrates the application functionality:
 
-![A user enters their daily events in a calendar that is color coded for each hour of the day.](./assets/images/readme.gif)
+![A user enters their daily events in a calendar that is color coded for each hour of the day.](./assets/Scheduler.png)
