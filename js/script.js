@@ -1,6 +1,7 @@
 // Code within this function will be executed once DOM loads
 $(function () {
 
+
   
 // Function to add current date & time to header
   function timeUpdate() {
@@ -15,15 +16,15 @@ $(function () {
 // Function to change color of each time block based on the current time. 
 // Block colors will change based on past,present,future color assignments via the changeColors function below.
 
-  function hourColor() {
-    $('.time-block').each(function () {
-      var timeBlock = parseInt(this.id);
-// toggleClass in jquery used due to adding and removing classes
-      $(this).toggleClass('present', timeBlock === currentTime);
-      $(this).toggleClass('past', timeBlock < currentTime);
-      $(this).toggleClass('future', timeBlock > currentTime);
-    });
-  }
+//   function hourColor() {
+//     $('.time-block').each(function () {
+//       var timeBlock = parseInt(this.id);
+// // toggleClass in jquery used due to adding and removing classes
+//       $(this).toggleClass('present', timeBlock === currentTime);
+//       $(this).toggleClass('past', timeBlock < currentTime);
+//       $(this).toggleClass('future', timeBlock > currentTime);
+//     });
+//   }
 
 // Function to store the user inputted event to local storage
   function userEvent() {
@@ -37,8 +38,10 @@ $(function () {
 
 // Function to refresh time block colors based on the current time. 
   function changeColors() {
-    $('.time-block').each(function () {
+    $('.description').each(function () {
       var timeBlock = parseInt(this.id);
+      console.log(timeBlock);
+      console.log(currentTime);
       if (timeBlock == currentTime) {
         $(this).removeClass('past future').addClass('present');
       } else if (timeBlock < currentTime) {
@@ -50,10 +53,10 @@ $(function () {
   }
 
 // Retrieve current hour of the day using dayjs.
-  var currentTime = dayjs().format();
+  var currentTime = dayjs().hour();
 
 // Call the three page set up functions
-  hourColor();
+  // hourColor();
   userEvent();
   changeColors();
 
