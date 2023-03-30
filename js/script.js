@@ -3,7 +3,7 @@ $(function () {
 
 
   
-// Function to add current date & time to header
+// Function to add current date & time to header using dayjs
   function timeUpdate() {
     var dateEl = $('#date');
     var timeEl = $('#time');
@@ -12,19 +12,6 @@ $(function () {
     dateEl.text(currDate);
     timeEl.text(currTime);
   }
-
-// Function to change color of each time block based on the current time. 
-// Block colors will change based on past,present,future color assignments via the changeColors function below.
-
-//   function hourColor() {
-//     $('.time-block').each(function () {
-//       var timeBlock = parseInt(this.id);
-// // toggleClass in jquery used due to adding and removing classes
-//       $(this).toggleClass('present', timeBlock === currentTime);
-//       $(this).toggleClass('past', timeBlock < currentTime);
-//       $(this).toggleClass('future', timeBlock > currentTime);
-//     });
-//   }
 
 // Function to store the user inputted event to local storage
   function userEvent() {
@@ -52,11 +39,10 @@ $(function () {
     });
   }
 
-// Retrieve current hour of the day using dayjs.
+// Retrieve current hour of the day using dayjs
   var currentTime = dayjs().hour();
 
-// Call the three page set up functions
-  // hourColor();
+// Call the page set up functions
   userEvent();
   changeColors();
 

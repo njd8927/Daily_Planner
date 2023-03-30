@@ -1,4 +1,4 @@
-# calendar_challenge
+# Daily_Planner
 
 ## Description
 
