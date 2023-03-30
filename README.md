@@ -6,7 +6,7 @@ The purpose of this web application is to provide the user with a calendar appli
 
 ## Installation
 
-To view the HTML, CSS & Javascript code; visit the following link to my Github repository: https://github.com/njd8927/calendar_challenge
+To view the HTML, CSS & Javascript code; visit the following link to my Github repository: https://github.com/njd8927/Daily_Planner
 
 ## Usage
 
@@ -20,9 +20,9 @@ MIT License
 
 This web application was designed with assistance from JD Tadlack, W3 Schools and MDN Web Docs: https://developer.mozilla.org/en-US/ // https://www.w3schools.com/
 
-Link to deployed webpage: https://njd8927.github.io/calendar_challenge/
+Link to deployed webpage: https://njd8927.github.io/Daily_Planner/
 ## Mock-Up
 
 TThe following image demonstrates the application functionality:
 
-![A user enters their daily events in a calendar that is color coded for each hour of the day.](./assets/Scheduler.png)
+![A user enters their daily events in a calendar that is color coded for each hour of the day.](./assets/images/App%20Screenshot.png)
